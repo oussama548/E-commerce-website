@@ -1,0 +1,916 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navBar{
+    width:100%;
+    height:10vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 60px;
+    background-color: rgb(223, 186, 169);
+    position: sticky;
+    top:0;
+    left: 0;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.navBar .logo img{
+    height:45px;
+    width:45px;
+}
+.options{
+    width:35%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.options li{
+    list-style: none;
+    transition:0.5s;
+}
+.options li a:hover{
+    color:white;
+    border-bottom: 2px solid white;
+}
+.img :hover{
+    border-bottom:none;
+    color:white;
+}
+
+.options a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.options .card{
+    height:35px;
+    width:35px;
+}
+
+.entrance{
+    width:100%;
+    height:90vh;
+    background-image: url(background/back2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 90vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 140px;
+    padding-left: 100px;
+}
+
+.promo{
+    padding:15px;
+}
+.promo h1{
+    font-size: 3em;
+    font-weight: 600;
+    margin:5px 0;
+}
+.promo p{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.color{
+    color:rgb(234, 108, 35);
+    font-size: 3.2em;
+}
+.promo button{
+    width:130px;
+    height:40px;
+    margin-top: 30px;
+    margin-left: 50px;
+    border:none;
+    border-radius: 15px;
+    outline: none;
+    font-size: 1.4em;
+    cursor:pointer;
+    background-color: rgb(229, 165, 17);
+    color:white;
+}
+
+.products{
+    width:100%;
+    min-height:200px;
+    display:flex;
+    flex-wrap: wrap;
+    gap:30px;
+    justify-content: space-evenly;
+    padding:40px;
+}
+
+.pro-card{
+    background-color: rgba(248, 226, 211, 0.808);
+    padding:15px;
+    width:20%;
+    min-height:200px;
+    min-width:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid rgb(236, 202, 166) ;
+    border-radius: 15px;
+    cursor:pointer;
+}
+
+.pro-card .pro-img{
+    width:80%;
+    height:180px;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    border:1px solid rgb(252, 215, 181);
+}
+.pro-card .imgs{
+    width:40%;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-bottom:8px;
+}
+
+.pro-card .imgs .star{
+    width:25px;
+    height:25px;
+}
+
+.pro-card .finance{
+    padding:0px 25px;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.card-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width:40px;
+    height: 40px;
+}
+.add{
+    width:25px;
+    height:25px;
+}
+.card-div:hover{
+    background-color: rgb(247, 170, 106);
+    color:white;
+    cursor: pointer;
+}
+.mark{
+    font-size:1.1em;
+    margin-bottom: 7px;
+}
+
+.pro-name{
+    font-size:1.3em;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.price{
+    color:rgb(227, 111, 34);
+    font-size:1.4em;
+    font-weight: 500;
+}
+.pro-title{
+    width:100%;
+    margin-bottom: 30px;
+    margin-top:40px;
+    text-align: center;
+}
+.pro-title h1{
+    font-size:3.5em;
+    font-weight:600;
+    margin-bottom:10px;
+}
+.pro-title p{
+    font-size:1.5em;
+}
+.promotion{
+    margin-top:50px;
+    background-image: url(background/b2.jpg);
+    width:100%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.repair{
+    margin-top:25px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.seventy{
+    font-size: 2.6em;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+.promotion button{
+    border:none;
+    outline: none;
+    padding:10px 15px;
+    width:150px;
+    height:50px;
+    font-size:1.2em;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.enterTitle{
+    width:100%;
+    margin-bottom: 30px;
+    margin-top:40px;
+    text-align: center;
+}
+.enterTitle h1{
+    font-size:3.5em;
+    font-weight:600;
+    margin-bottom:10px;
+}
+.enterTitle p{
+    font-size:1.5em;
+}
+.arrive{
+    width:100%;
+    min-height:200px;
+    display:flex;
+    flex-wrap: wrap;
+    gap:30px;
+    justify-content: space-evenly;
+    padding:40px;
+}
+
+.mailUp{
+    width:100%;
+    height:30vh;
+    display: flex;
+    justify-content: space-between;
+    padding:0px 80px;
+    align-items: center;
+    background-image: url(background/b1.jpg);
+}
+.text h1 , .knowUs h1{
+    font-size:3em;
+    font-weight: 600;
+    color:white;
+}
+.text p , .knowUs p{
+    color:white;
+    font-size:1.3em;
+}
+.text span{
+    color:rgb(230, 164, 11);
+}
+.mail{
+    width:35%;
+    position: relative;
+}
+.mail .input{
+    width:75%;
+    height:50px;
+    border:none;
+    outline: none;
+    border-radius: 10px 0 0 10px;
+    padding:8px;
+    font-size:1.2em;
+}
+.mail button{
+    width:20%;
+    height: 50px;
+    border:none;
+    outline: none;
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    right:35px;
+    cursor: pointer;
+    background-color: rgb(234, 69, 15);
+    color:white;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.footer{
+    margin-top:90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact .logo{
+    height:40px;
+    width:40px;
+}
+.contact .icons{
+    display:flex;
+    justify-content: space-around;
+    gap:10px;
+    width:100%;
+}
+
+.contact .icons img{
+    width:20px;
+    height:20px;
+}
+.contact h3{
+    color:rgb(43, 43, 43);
+    margin-top:15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.contact a{
+    display:block;
+    font-size:1.1em;
+    color:rgb(95, 94, 94);
+}
+.about h3{
+    color:rgb(43, 43, 43);
+    margin-top:15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.about a{
+    display:block;
+    font-size:1.1em;
+    color:rgb(95, 94, 94);
+}
+
+.account h3{
+    color:rgb(43, 43, 43);
+    margin-top:15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.account a{
+    display:block;
+    font-size:1.1em;
+    color:rgb(95, 94, 94);
+
+}
+.install h3{
+    color:rgb(43, 43, 43);
+    margin-top:15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.install .instalation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.install .instalation div{
+    border:1px solid rgb(90, 221, 90);
+}
+
+.pay{
+    margin-top:10px;
+}
+footer a{
+    text-decoration: none;
+}
+#active{
+    color:white;
+    border-bottom: 2px solid white;
+}
+.noLsine :hover{
+    border:none;
+}
+
+.choice{
+    width:100%;
+    height:90vh;
+    background-image: url(background/bg3.jpg);
+    background-size: 100% 90vh;
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    align-items: center;
+}
+
+.men{
+    border-radius: 20px;
+    width:40%;
+    height:30vh;
+    background-image: url(background/menBg.webp);
+    background-size: 100% 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.women{
+    width:40%;
+    height:30vh;
+    border-radius: 20px;
+    background-image: url(background/womenBg.jpg);
+    background-size: 100% 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.men button , .women button{
+    height:45px;
+    width:200px;
+    background-color: black;
+    color:white;
+    font-size: 1.8em;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor:pointer;
+}
+
+.welcome{
+    width:100%;
+    height:40vh;
+    background-image: url(background/b2.jpg);
+}
+.selection{
+    padding:40px;
+    width:100%;
+    height:40vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.cat-btn{
+    height:50px;
+    width:180px;
+    padding:25px 20px;
+    color:white;
+    background-color: rgb(0, 0, 0); 
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-top:20px;
+}
+.selection div:hover{
+    color:gray;
+}
+#List li{
+    list-style: none;
+}
+#List li a{
+    display:inline-block;
+    width:200px;
+    height:60px;
+    color:white;
+    background-color: black;
+    margin: 2px 0px;
+    font-size: 1.8em;
+    font-weight: 500;
+    border-radius: 12px;
+    padding:7px;
+}
+#List li a:hover{
+    color:gray;
+}
+
+.hide{
+    display: none;
+}
+.choix{
+    height:60px;
+    width:250px;
+    padding:15px 20px;
+    color:white;
+    background-color: rgb(238, 88, 23); 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-top:20px;
+}
+.knowUs{
+    width:100%;
+    height:40vh;
+    background-image: url(background/buildings.png);
+    background-size: 100% 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.def{
+    width:100%;
+    height:85vh;
+    padding:40px;
+    display: flex;
+    justify-content:space-between;
+    gap:15px;
+}
+.aboutimg{
+    width:45%;
+    background-image: url(background/about.jpg);
+    background-size:100% 65vh;
+}
+
+.aboutext{
+    width:50%;
+    padding:60px 70px 60px 30px;
+}
+.aboutext h1{
+    font-size:3.8em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.aboutext p{
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.sign{
+    width:100%;
+    height:90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:80px;
+}
+.container{
+    border-radius: 15px;
+    border: 1px solid rgb(244, 115, 115);
+    height:90%;
+    width:70%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.signIn{
+    width:50%;
+    height:100%;
+    padding:20px;
+}
+.signIn h1 , .SignUp h1{
+    font-size:3em;
+    font-weight: 600;
+    text-align: center;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+.signIn input {
+    width:90%;
+    height:40px;
+    margin-bottom: 20px;
+    border:none;
+    outline: none;
+    border: 1px solid black;
+    border-radius:7px;
+    padding:4px 10px;
+    font-size:1.1em;
+}
+.signIn p {
+    text-align: center;
+    margin-top:10px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+
+}
+.signIn button , .signUp button , .SignIn button , .SignUp button{
+    margin:15px 0 15px 0;
+    width:150px;
+    height:50px;
+    padding:7px;
+    border:none;
+    outline: none;
+    border-radius:20px;
+    background-color: rgb(244, 115, 115);
+    color:white;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+.signIn button:hover{
+    color:rgb(234, 201, 201);
+}
+.signIn div , .SignIn div , .SignUp div{
+    display:flex;
+    justify-content: center;
+}
+.signUp{
+    width:50%;
+    height:100%;
+    background-color: rgb(244, 115, 115);
+    color:white;
+    border-radius: 0 15px 15px 0;
+}
+.signUp h1{
+    font-size:3em;
+    font-weight: 600;
+    text-align: center;
+    margin-top:75px;
+    margin-bottom: 15px;
+
+}
+.signUp p{
+    font-size:1.3em;
+    text-align: center;
+    margin-bottom:45px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.signUp div{
+    display: flex;
+    justify-content: center;
+}
+.signUp button{
+    background-color: rgb(244, 115, 115);
+    border:2px solid white;
+    color:white;
+
+}
+.signUp button:hover{
+    color:rgb(249, 192, 192);
+    border-color:rgb(239, 167, 167);
+}
+
+.SignUp input{
+    margin-left: 40px;
+    margin-right: 10px;
+    width:70%;
+    height:40px;
+    margin-bottom: 20px;
+    border:none;
+    outline: none;
+    border: 1px solid black;
+    border-radius:7px;
+    padding:4px 10px;
+    font-size:1.1em;
+}
+.SignIn{
+    width:50%;
+    height:100%;
+    padding:20px;
+    border-radius: 15px 0 0 15px;
+    color:white;
+    background-color:rgb(244, 115, 115);
+}
+.SignIn h1{
+    font-size:3em;
+    font-weight: 600;
+    text-align: center;
+    margin-top:45px;
+    margin-bottom: 15px;
+}
+.SignIn p{
+    font-size:1.3em;
+    text-align: center;
+    margin-bottom:75px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.SignIn button{
+    background-color: rgb(244, 115, 115);
+    border:2px solid white;
+    color:white;
+}
+
+.SignUp{
+    width:50%;
+    height:100%;
+    padding:20px;
+}
+.InTouch{
+    width:100%;
+    height:90vh;
+    display:flex;
+    justify-content: center;
+    padding:70px;
+}
+
+.cntct{
+    height: 100%;
+    width:45%;
+    padding:60px;
+}
+.map{
+    width:40%;
+    height:100%;
+    padding:7px;
+}
+
+.InTouch .contactIcon{
+    width:25px;
+    height:25px;
+    margin-right: 18px;
+}
+.InTouch .contatcText{
+    width:90%;
+    margin-bottom: 20px;
+    display:flex
+}
+
+.InTouch h1{
+    font-size:3em;
+    font-weight: 600;
+    text-align: justify;
+    margin-top:15px;
+    margin-bottom: 15px;
+    line-height: 50px;
+}
+.InTouch h3{
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom:20px;
+}
+.InTouch h4{
+    font: size 1.4em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+iframe{
+    border-radius: 20px;
+}
+
+.LeaveMessage{
+    width:70%;
+    height:70vh;
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin:20px auto;
+    margin-bottom: 80px;
+    border:1px solid black;
+    border-radius:10px;
+}
+.inputMessage{
+    width:65%;
+    height:100%;
+}
+
+.inputMessage h3{
+    margin-top:80px;
+    font-size:1.2em;
+    font-weight: 500;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+.inputMessage h1{
+    font-size: 2.8em;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-bottom:20px;
+    position: relative;
+}
+.inputMessage textarea{
+    height:20vh;
+    padding:10px;
+    margin-left: 50px;
+    width:60%;
+    font-size: 1.2em;
+}
+.inputMessage button{
+    margin:15px 0 15px 0;
+    width:150px;
+    height:50px;
+    padding:7px;
+    border:none;
+    outline: none;
+    background-color: rgb(244, 115, 115);
+    color:white;
+    border-radius:20px;
+    font-size: 1.3em;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+.people{
+    width:35%;
+    padding: 20px;
+    color:rgb(127, 125, 125);
+}
+.person{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+.person img{
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+
+}
+.person .personImg{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.person h4{
+    font-size: 1.1em;
+    font-weight: 500;
+    color:black;
+    margin-bottom: 9px;
+}
+table
+{
+    width:90%;
+    margin: 30px 70px;
+}
+table td{
+    text-align: center;
+    align-items: center;
+    padding:auto;
+    height:85px;
+}
+table input{
+    height:30px;
+    width:60px;
+    padding:7px;
+    font-size:1.2em;
+}
+.remove{
+    height:25px;
+    width:25px;
+}
+.smallpro{
+    height:70px;
+    width:60px;
+}
+.void{
+    font-size:2em;
+    font-weight: 600;
+    margin:40px auto;
+    text-align: center;
+}
+
+.details{
+    height:90vh;
+    width:80%;
+    display:flex;
+    justify-content: space-between;
+    margin:0 auto;
+}
+.detImg{
+    width:37%;
+    height:100%;
+    padding: 30px;
+
+}
+.detImg img{
+    margin-top:80px;
+    width:90%;
+    height:60%;
+    border:2px solid rgb(246, 91, 64);
+    border-radius: 15px;
+}
+.article{
+    width:58%;
+    height:100%;
+    padding:40px 90px 40px 30px;
+}
+
+.article h3{
+    margin-top:100px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.article h1{
+    font-size:3em;
+    font-weight: 600;
+    margin-top:20px;
+    margin-bottom: 20px;
+    color:rgb(238, 79, 31);
+}
+.article p{
+    width:60%;
+    text-align: justify;
+    color:rgb(81, 81, 81);
+}
+.article h2{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
